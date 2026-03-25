@@ -1,0 +1,30 @@
+.conteiner-inicial{
+    background-color: #141414;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    position: fixed;
+    text-align: center;
+    
+}
+
+.tela-inicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.tela-inicial-titulo{
+    color: #fff;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.tela-inicial-perfis{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
