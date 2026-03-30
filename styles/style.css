@@ -1,5 +1,12 @@
-.conteiner-inicial{
+body {
+    margin: 0;
     background-color: #141414;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+/*    CONFIGURACOES DA TELA    */
+
+.conteiner-inicial {
     top: 0;
     bottom: 0;
     left: 0;
@@ -7,30 +14,130 @@
     z-index: 0;
     position: fixed;
     text-align: center;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.tela-inicial{
+.tela-inicial {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
-.tela-inicial-titulo{
+.tela-inicial-titulo {
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3.5rem;
 }
 
-.tela-inicial-perfis{
+.tela-inicial-perfis {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 5rem;
     list-style: none;
 }
 
-.perfil-nome{
-    color: #fff;
+/*    PERFIS    */
+
+.perfil-conteiner {
+    width: 220px;
+}
+
+.perfil-conteiner-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid transparent;
+    border-radius: 5px;
+}
+
+.perfil-conteiner-image-add {
+    display: block;
+    width: 100%;
+    max-width: 70%;
+    height: auto;
+    border: 5px solid transparent;
+    border-radius: 5px;
     color: grey;
+
+}
+
+.perfil-conteiner-image:hover {
+    border: 5px solid;
+    border-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.perfil-conteiner-nome {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: grey;
+    margin: .5em 0 0;
+}
+
+/*    BOTAO GERENCIAR PERFIS    */
+
+.gerenciar-perfis {
+    text-decoration: none;
+    color: grey;
+    border: 1px solid;
+    border-color: grey;
+    margin: 5em 0 1em;
+    padding: .7em 2em
+}
+
+.gerenciar-perfis:hover {
+    border-color: #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gerenciar-perfis-texto {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+
+@media (max-width: 600px) {
+    .tela-inicial-titulo {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
+
+    .tela-inicial-perfis {
+        gap: 2rem;
+        margin: 1rem 0;
+    }
+
+
+    .perfil-conteiner-nome {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .tela-inicial-titulo {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+
+    }
+
+    .tela-inicial-perfis {
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .perfil-conteiner {
+        width: 90px;
+    }
+
+    .perfil-conteiner-nome {
+        font-size: 0.9rem;
+    }
 }
