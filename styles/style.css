@@ -4,6 +4,11 @@ body {
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 /*    CONFIGURACOES DA TELA    */
 
 .conteiner-inicial {
@@ -196,5 +201,9 @@ body {
 
     .perfil-conteiner-nome {
         font-size: 0.9rem;
+    }
+
+    .gerenciar-perfis-texto{
+        font-size: 1rem;
     }
 }
