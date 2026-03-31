@@ -35,6 +35,10 @@ ul {
     cursor: pointer;
 }
 
+.perfil-link{
+    text-decoration: none;  
+}
+
 .tela-inicial {
     display: flex;
     flex-direction: column;
@@ -168,17 +172,25 @@ ul {
 
 @media (max-width: 600px) {
     .tela-inicial-titulo {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         margin: 1rem 0;
+
     }
 
     .tela-inicial-perfis {
-        gap: 2rem;
+        gap: 1rem;
         margin: 1rem 0;
     }
 
+    .perfil-conteiner {
+        width: 90px;
+    }
 
     .perfil-conteiner-nome {
+        font-size: 0.9rem;
+    }
+
+    .gerenciar-perfis-texto{
         font-size: 1rem;
     }
 }
